@@ -1,0 +1,103 @@
+/* ------------------------------------------------------------ *\
+	Section Default
+\* ------------------------------------------------------------ */
+
+.section-default { margin: 250px 0 150px; }
+.section-default .pagetitle { margin-bottom: 20px; }
+.section-default .section__content { padding-bottom: 30px; }
+.section-default .pagetitle:last-child { margin-bottom: 0; }
+
+/*section-default--404*/
+.section-default--404 { display: flex; width: 100%; }
+.section-default--404 .shell { display: flex; align-items: center; justify-content: center; }
+.section-default--404 .section__content { text-align: center; }
+.section-default--404 .section__content .btn { margin-top: 20px; }
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.section-default { margin: 150px 0 70px; }
+	.section-default .page__entry img { display: block; }
+}
+
+/* ------------------------------------------------------------ *\
+	Section Features
+\* ------------------------------------------------------------ */
+
+.section-features { padding: 0 34px 10px; }
+
+/* Small Desktop */
+
+$breakpoint-small-desktop {
+	.section-features { padding: 0 12px 10px; }
+}
+
+/* ------------------------------------------------------------ *\
+	Section Card
+\* ------------------------------------------------------------ */
+
+.section-card + .section-features { margin-top: 36px;  }
+
+/* ------------------------------------------------------------ *\
+	Section Box
+\* ------------------------------------------------------------ */
+
+.section-box { display: flex; padding-bottom: 24px; }
+
+/* ------------------------------------------------------------ *\
+	Section Buttons
+\* ------------------------------------------------------------ */
+
+.section-buttons { padding: 20px 42px; }
+.section-buttons .section__content { padding: 8px 0; }
+.section-buttons.border-top .section__content { border-top: 1px solid #e0dfe0; }
+.section-buttons.border-bottom .section__content { border-bottom: 1px solid #e0dfe0; }
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.section-buttons { padding: 20px; }
+}
+
+/* ------------------------------------------------------------ *\
+	Section Content
+\* ------------------------------------------------------------ */
+
+.section-content { padding: 90px 20px 35px; font-size: 26px; line-height: 1.6; }
+.section-content p { margin-bottom: 36px; }
+
+/*  Section Content Small  */
+
+.section-content--small .section__inner { max-width: 860px; margin: 0 auto; }
+
+/* Tablet Portrait */
+
+$breakpoint-tablet-portrait {
+	.section-content { font-size: 20px; }
+}
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.section-content { padding: 70px 20px 35px; }
+	.section-content { font-size: 16px; }
+}
+
+/* ------------------------------------------------------------ *\
+	M Bottom
+\* ------------------------------------------------------------ */
+
+.m-bottom { margin-bottom: 36px; }
+
+/* ------------------------------------------------------------ *\
+	Section Image
+\* ------------------------------------------------------------ */
+
+.section-image { padding: 0 24px; text-align: center; }
+.section-image img { }
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.section-image { padding: 0 20px; }
+}

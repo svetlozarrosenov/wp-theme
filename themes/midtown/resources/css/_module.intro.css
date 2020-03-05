@@ -1,0 +1,32 @@
+/* ------------------------------------------------------------ *\
+	Intro
+\* ------------------------------------------------------------ */
+
+.intro { display: flex; position: relative; text-align: center; color: $c-white; text-transform: uppercase; background-size: cover; background-position: center center; background-repeat: no-repeat; }
+.intro .intro__bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+.intro .intro__inner { width: 100%; display: flex; align-items: center; justify-content: center; min-height: 100vh; position: relative; z-index: 2; padding: 300px 20px; text-shadow: 0 0 30px rgba(0, 0, 0, .6); }
+.intro h1 { margin-bottom: 10px; }
+.intro h1:last-child { margin-bottom: 0; }
+
+/*  Intro Small  */
+
+.intro--small { }
+.intro--small h1 { font-size: 78px; }
+
+@media(max-width: 1100px){
+	.intro--small h1 { font-size: 70px; }
+}
+
+/* Tablet Portrait */
+
+$breakpoint-tablet-portrait {
+	.intro--small h1 { font-size: 70px; } 
+	.intro .intro__inner { padding: 200px 20px; }
+}
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.intro .intro__inner { padding: 150px 20px; }
+	.intro--small h1 { font-size: 40px; }
+}

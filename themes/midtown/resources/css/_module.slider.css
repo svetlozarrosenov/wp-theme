@@ -1,0 +1,25 @@
+/* ------------------------------------------------------------ *\
+	Slider Features
+\* ------------------------------------------------------------ */
+
+.slider--features { }
+.slider--features .swiper-wrapper { justify-content: space-between; }
+.slider--features .swiper-slide { width: auto; flex-grow: 1; padding: 0 8px; display: flex; }
+
+.slider--features-alt .slider__actions { display: none; }
+
+.slider--features .slider__actions div { color: $c-white; }
+.slider--features .slider__actions div:after { text-shadow: 0 5px 10px $c-black; }
+
+/* Tablet Portrait */
+
+$breakpoint-tablet-portrait {
+	.slider--features .slider__actions div:after { font-size: 20px; }
+}
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.slider--features .slider__actions { position: absolute; bottom: 30px; left: 0; width: 100%; z-index: 15; }
+	.slider--features .slider__actions div:after { font-size: 26px; }
+}

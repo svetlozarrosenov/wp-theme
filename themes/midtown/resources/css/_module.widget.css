@@ -1,0 +1,44 @@
+/* ------------------------------------------------------------ *\
+	# Widgets
+\* ------------------------------------------------------------ */
+
+[class^="widgets"],
+[class^="widgets"] > ul { list-style: none; }
+
+.widgets { display: flex; flex-wrap: wrap; margin: -10px -20px;  }
+.widgets > li { width: 50%; padding: 10px 20px; }
+
+.widget { margin-bottom: 15px; }
+.widget > ul { list-style: none outside none; margin: 0; }
+.widget > ul li { padding: 5px 0; }
+.widget > ul a { text-decoration: none; border-bottom: 1px solid transparent; }
+.widget > ul a:hover { border-bottom-color: $c-base; color: $c-base; }
+
+$breakpoint-mobile{
+	.widgets { margin: -10px; }
+	.widgets > li { width: 100%; padding: 10px; }
+}
+
+/* ------------------------------------------------------------ *\
+	- Calendar
+\* ------------------------------------------------------------ */
+
+.widget_calendar table { width: 100%; border-spacing: 0; border-collapse: collapse; text-align: center; }
+.widget_calendar td,
+.widget_calendar th { padding: 5px; border: 1px solid #000; }
+.widget_calendar caption { padding: 12px; font-weight: bold; }
+.widget_calendar tfoot { font-weight: bold; }
+
+/* ------------------------------------------------------------ *\
+	- Rss
+\* ------------------------------------------------------------ */
+
+.widget_rss .rsswidget { vertical-align: middle; }
+.widget_rss .rsswidget img { float: left; margin: 5px 8px 0 0; }
+
+/* ------------------------------------------------------------ *\
+	- Categories
+\* ------------------------------------------------------------ */
+
+.widget_categories .screen-reader-text { display: none; }
+.widget_categories .post-form { width: 100%; padding: 5px; }

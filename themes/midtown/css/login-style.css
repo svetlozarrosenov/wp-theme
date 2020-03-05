@@ -1,0 +1,8 @@
+ /* ------------------------------------------------------------ *\
+    Login
+\* ------------------------------------------------------------ */
+
+.login h1 a { display: inline-block; vertical-align: middle; text-decoration: none; font-size: 0; line-height: 0; text-indent: -4004px; width: 217px; height: 238px; background: url(../resources/images/logo.jpg) no-repeat center center/contain;  }
+
+.login.wp-core-ui .button-primary,
+.login.wp-core-ui .button-primary:focus {  display: inline-block; vertical-align: middle; text-align: center; cursor: pointer; text-decoration: none; appearance: none; border-radius: 0; border: 0; color: #f8f8f8; text-transform: uppercase; font-weight: 700; font-size: 14px; letter-spacing: $ls; box-shadow: none; text-shadow: none; transform: none; color: $c-white; background: $c-base; }

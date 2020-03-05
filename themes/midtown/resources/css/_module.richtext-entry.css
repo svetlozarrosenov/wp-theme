@@ -1,0 +1,25 @@
+/* ------------------------------------------------------------ *\
+	Richtext Entry
+\* ------------------------------------------------------------ */
+
+.richtext-entry > ul:not([class]),
+.richtext-entry > ol:not([class]) { padding-left: 30px; }
+
+.richtext-entry > ul:not([class]) ol,
+.richtext-entry > ul:not([class]) ul,
+.richtext-entry > ol:not([class]) ol,
+.richtext-entry > ol:not([class]) ul { padding-left: 30px; }
+
+.richtext-entry > blockquote { border-left: 2px solid $c-base; margin-left: 0; padding: 0 0 0 16px; }
+
+/*
+ * Unset nested content selector styles
+ * - Prevents layout styles from cascading too deeply
+ * - helps with plugin compatibility
+ */
+.richtext-entry > .richtext-entry { margin: inherit; max-width: inherit; padding: inherit; }
+
+/* Blocks */
+.richtext-entry > *.alignwide { width: 100%; max-width: 100%; clear: both; }
+.richtext-entry > *.aligncenter { margin-left: auto; margin-right: auto; }
+.richtext-entry > *.alignfull { margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); width: auto; }

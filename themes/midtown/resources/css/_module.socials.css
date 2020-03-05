@@ -1,0 +1,21 @@
+/* ------------------------------------------------------------ *\
+	Socials
+\* ------------------------------------------------------------ */
+
+.socials { }
+.socials ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; margin: 0 -7px; }
+.socials ul li { padding: 0 7px;  }
+.socials ul a { text-decoration: none; display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; text-align: center; border: 2px solid #6e6e6e; color: #6e6e6e; border-radius: 50%; font-size: 24px; }
+.socials ul a:hover { color: $c-white; border-color: $c-white; }
+
+/* Tablet Portrait */
+
+$breakpoint-tablet-portrait {
+	.socials ul a { width: 34px; height: 34px; font-size: 18px; }
+}
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.socials ul { justify-content: center; }
+}

@@ -1,0 +1,17 @@
+/* ------------------------------------------------------------ *\
+	Logo
+\* ------------------------------------------------------------ */
+
+.logo { display: inline-block; vertical-align: middle; text-decoration: none; font-size: 0; max-width: 158px; }
+
+/* Tablet Portrait */
+
+$breakpoint-tablet-portrait {
+	.logo { max-width: 100px; }
+}
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.logo { max-width: 80px; }
+}

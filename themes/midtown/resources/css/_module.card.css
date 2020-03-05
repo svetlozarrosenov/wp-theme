@@ -1,0 +1,43 @@
+/* ------------------------------------------------------------ *\
+	Card
+\* ------------------------------------------------------------ */
+
+.card { display: flex; justify-content: space-between; background: #e3e3e3; }
+.card .card__image { display: flex; width: 66.5%; }
+.card .card__image span { width: 100%; min-height: 100%; padding-top: 69%; background-size: cover; background-position: center center; background-repeat: no-repeat; }
+
+.card .card__content { width: 33.5%; display: flex; align-items: center; justify-content: center; padding: 80px; position: relative; }
+.card .card__content:after { content: ''; width: 263px; height: 203px; background: url(../images/temp/card-logo.png) no-repeat center center/contain; position: absolute; bottom: 0; left: 0; }
+.card .card__entry { position: relative; z-index: 2; }
+
+.card .card__content h3 { font-size: 42px; line-height: 1; }
+.card .card__content p { font-size: 25px; line-height: 1.45; }
+
+/*  Card Reversed  */
+
+.card--reversed .card__content { order: 1; }
+
+@media(max-width: 1100px){
+	.card .card__content { padding: 50px; }
+	.card .card__content:after { width: 219px; height: 169px; }
+
+	.card .card__content h3 { font-size: 36px; }
+	.card .card__content p { font-size: 20px; }
+}
+
+/* Tablet Portrait */
+
+$breakpoint-tablet-portrait {
+	.card { display: block; }
+	.card .card__image { width: 100%; }
+	.card .card__content { width: 100%; }
+}
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.card .card__content { padding: 50px 20px; }
+	.card .card__content h3 { font-size: 26px; }
+	.card .card__content p { font-size: 16px; }
+}
+

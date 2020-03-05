@@ -1,0 +1,41 @@
+/* ------------------------------------------------------------ *\
+	Bar
+\* ------------------------------------------------------------ */
+
+.bar { padding: 20px 42px; text-align: center; }
+
+.bar .bar__content { padding: 8px 0; }
+
+.bar.border-top .bar__content { border-top: 1px solid #e0dfe0; }
+.bar.border-bottom .bar__content { border-bottom: 1px solid #e0dfe0; }
+
+.bar h4 { font-weight: 700; font-style: italic; letter-spacing: -.01em; }
+
+.bar p { font-size: 25px; letter-spacing: .025em; }
+.bar p a { text-decoration: none; display: inline-block; position: relative; }
+.bar p a:after { content: ''; position: absolute; bottom: 0; left: 50%; width: 100%; height: 2px; background: $c-black; transform: translateX(-50%); transition: background .4s; }
+
+.bar--large h4 { font-size: 49px; }
+
+@media (-ms-high-contrast: none), (-ms-high-contrast: active), (-moz-touch-enabled: 0), (hover) {
+ 	 .bar p a:hover { color: $c-base; } 
+ 	 .bar p a:hover:after { background: $c-base; } 
+}
+
+@media(max-width: 1199px){
+	.bar { padding: 20px; }
+}
+
+/* Tablet Portrait */
+
+$breakpoint-tablet-portrait {
+	.bar--large h4 { font-size: 40px; }
+	.bar p { font-size: 20px; }
+}
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.bar--large h4 { font-size: 22px; }
+	.bar p { font-size: 18px; }
+}

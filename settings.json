@@ -1,0 +1,26 @@
+{
+	"writable_dirs": [
+		"wp-content/uploads",
+		"wp-content/cache"
+	],
+
+	"writable_files": [
+		".htaccess"
+	],
+
+	"enable_wp_debug": false,
+
+	"exclude_from_archive": [
+		"wp-config.php",
+		"wp-content/settings.json",
+		"wp-content/dump.sql.gz",
+		"wp-content/themes/midtown/node_modules"
+	],
+
+	"build": "drone",
+
+	"scripts": {
+		"default": "npm start",
+		"build": "npm run build"
+	}
+}
